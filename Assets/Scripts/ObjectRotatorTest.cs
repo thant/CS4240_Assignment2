@@ -39,5 +39,8 @@ public class ObjectRotatorTest : MonoBehaviour
             // Update the last mouse position for the next frame
             lastMousePosition = Input.mousePosition;
         }
+
+        // Keep the object at its initial position (this should already be the case, but it's good to ensure it)
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
     }
 }
