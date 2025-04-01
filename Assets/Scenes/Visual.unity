@@ -397,160 +397,6 @@ Transform:
   - {fileID: 82567152}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &261712790
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 261712794}
-  - component: {fileID: 261712793}
-  - component: {fileID: 261712792}
-  - component: {fileID: 261712791}
-  - component: {fileID: 261712795}
-  m_Layer: 6
-  m_Name: Healthy
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &261712791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261712790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a95bef66e8c774409f9fa582df3c2c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 100
---- !u!23 &261712792
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261712790}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -8771166627424403242, guid: 76455afe730e4a045905a88051690766, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &261712793
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261712790}
-  m_Mesh: {fileID: -2432090755550338912, guid: 2b42ea4ffb6f2f24199c2bcf391e038e, type: 3}
---- !u!4 &261712794
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261712790}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.04, y: 3.29, z: 3.106268}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &261712795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261712790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d7bc716f7565fd44949ab5efd68bceb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightJoystick:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Right Joystick
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 3be201ee-ac20-445a-8232-a6bff723e902
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: c1bf0f47-4c70-42b3-b7ff-a603f9fe6c2c
-        m_Path: <XRInputV1::Oculus::MetaQuestTouchPlusControllerOpenXR>{RightHand}/thumbstick
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Right Joystick
-        m_Flags: 0
-      m_Flags: 0
-    m_Reference: {fileID: -8666952849799569744, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  joystickClick:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Joystick Click
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 59b28205-20a7-40f4-8113-f2572c62c30d
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: a9fee3ae-ffa9-485d-ba37-d135d83fb855
-        m_Path: <XRInputV1::Oculus::MetaQuestTouchPlusControllerOpenXR>{RightHand}/thumbstickclicked
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Joystick Click
-        m_Flags: 0
-      m_Flags: 0
-    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  rotationSpeed: 100
 --- !u!1 &382863165
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,59 +536,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 100
---- !u!114 &444157147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444157144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d7bc716f7565fd44949ab5efd68bceb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightJoystick:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Right Joystick
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 5794fd44-326f-4024-8165-dc0cfe7fa89f
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -8666952849799569744, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  joystickClick:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Joystick Click
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: b305f4b5-d775-4359-8f16-c6859e023c98
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: 633cb3e5-33d5-44d7-b7b6-5cbbdd1c7e89
-        m_Path: <XRController>{RightHand}/joystickClicked
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Joystick Click
-        m_Flags: 0
-      - m_Name: 
-        m_Id: 57050bbc-6d27-49a8-899e-2b1a363ac4e9
-        m_Path: <XRInputV1::Oculus::MetaQuestTouchPlusControllerOpenXR>{RightHand}/thumbstickclicked
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Joystick Click
-        m_Flags: 0
-      m_Flags: 0
-    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  rotationSpeed: 100
 --- !u!1 &607572974
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,78 +658,6 @@ RectTransform:
   m_AnchoredPosition: {x: 5.01, y: 5.27}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &662131097
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 662131099}
-  - component: {fileID: 662131098}
-  m_Layer: 0
-  m_Name: ZoomManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &662131098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662131097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca9efc7942c622443bcf21ca527746aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftJoystick:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Left Joystick
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 528c5466-599a-4bca-a0f5-0f90c5faadda
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: db10f7c4-a413-482c-906f-649ebbadf417
-        m_Path: <XRController>{LeftHand}/joystick
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Left Joystick
-        m_Flags: 0
-      m_Flags: 0
-    m_Reference: {fileID: -60998027439631388, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  cameraTransform: {fileID: 745040370}
-  reticle: {fileID: 1485706078}
-  zoomableLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  zoomSpeed: 2
-  minZoom: 0.5
-  maxZoom: 5
---- !u!4 &662131099
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662131097}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.46289977, y: 1.5792453, z: -1.39088}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &745040369
 GameObject:
   m_ObjectHideFlags: 0
@@ -1360,6 +1081,101 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &765921236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1633028733494644441, guid: 35d4c9f907d0f534e84e0fd3e8e9df6c, type: 3}
+  m_PrefabInstance: {fileID: 356157926352233749}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &765921241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765921236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7bc716f7565fd44949ab5efd68bceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightJoystick:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Joystick
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 9a94ff6c-7fb7-456b-abd2-a5669827719c
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 297280e1-de8c-4d90-89a3-5ead56809d29
+        m_Path: <XRController>{RightHand}/joystick
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Right Joystick
+        m_Flags: 0
+      - m_Name: 
+        m_Id: de9b53c9-5489-42b9-89ef-eec841ec21fa
+        m_Path: <XRInputV1::Oculus::MetaQuestTouchPlusControllerOpenXR>{RightHand}/thumbstick
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Right Joystick
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: -8666952849799569744, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  joystickClick:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Joystick Click
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: c01508e6-22e0-499e-a6c8-6b68da111f77
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 13cf10f3-5352-4e1f-9ed4-46bf00c0d5d1
+        m_Path: <XRController>{RightHand}/joystickClicked
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Joystick Click
+        m_Flags: 0
+      - m_Name: 
+        m_Id: 0a5f62b6-e7b2-4ff3-84d2-1526b736d530
+        m_Path: <XRInputV1::Oculus::MetaQuestTouchPlusControllerOpenXR>{RightHand}/thumbstickclicked
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Joystick Click
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  rotationSpeed: 100
+--- !u!65 &765921242
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765921236}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 174.73138, y: 159.63321, z: 574.7277}
+  m_Center: {x: 3.3954942, y: 62.042866, z: -503.43652}
 --- !u!1 &828371916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,6 +1187,7 @@ GameObject:
   - component: {fileID: 828371917}
   - component: {fileID: 828371919}
   - component: {fileID: 828371918}
+  - component: {fileID: 828371920}
   m_Layer: 0
   m_Name: Left Controller
   m_TagString: Untagged
@@ -1407,10 +1224,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftController: {fileID: 828371917}
   reticle: {fileID: 1485706078}
-  reticleDistance: 5
+  reticleDistance: 1
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
+  leftJoystickInput:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Joystick Input
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 6bf44133-fa16-40e8-af9a-65b9236e91ef
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -60998027439631388, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   interactButton:
     m_UseReference: 1
     m_Action:
@@ -1439,6 +1268,8 @@ MonoBehaviour:
         m_Flags: 0
       m_Flags: 0
     m_Reference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  moveSpeed: 0.5
+  depthSpeed: 1
 --- !u!114 &828371919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1508,6 +1339,36 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+--- !u!114 &828371920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828371916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9efc7942c622443bcf21ca527746aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomButton:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Zoom Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: d7e26ce8-a3df-4e4d-8972-c95e016912a8
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  cameraTransform: {fileID: 745040370}
+  reticle: {fileID: 1485706078}
+  zoomableTag: Grabbable
+  zoomSpeed: 2
+  minDistance: 0.5
+  maxDistance: 5
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,6 +1418,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &998550345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6525583603249794655, guid: 1535f68d3e19389479df93f5db1c8941, type: 3}
+  m_PrefabInstance: {fileID: 4359160229201751002}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &998550349
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998550345}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 32.42383
+  m_Height: 325.08347
+  m_Direction: 1
+  m_Center: {x: -5.3225513, y: -7.1555414, z: -9.076913}
+--- !u!114 &998550350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998550345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7bc716f7565fd44949ab5efd68bceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightJoystick:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Joystick
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 3f8507b3-d226-4804-bea0-f0601c3fe72d
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: cef658dc-ad42-4095-868a-9e0508d90192
+        m_Path: <XRController>{RightHand}/joystick
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Right Joystick
+        m_Flags: 0
+      - m_Name: 
+        m_Id: 9cf53216-73e5-4317-8fc4-e99ed5280d07
+        m_Path: <XRInputV1::Oculus::MetaQuestTouchPlusControllerOpenXR>{RightHand}/thumbstick
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Right Joystick
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: -8666952849799569744, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  joystickClick:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Joystick Click
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 76feabee-1379-41c7-b02e-c174792b836d
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 80499481-1c29-42b7-9886-ff2b4cb0b098
+        m_Path: <XRController>{RightHand}/joystickClicked
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Joystick Click
+        m_Flags: 0
+      - m_Name: 
+        m_Id: ebf0c6c3-d40c-4b49-a9c6-62e1152fe2f9
+        m_Path: <XRInputV1::Oculus::MetaQuestTouchPlusControllerOpenXR>{RightHand}/thumbstickclicked
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Joystick Click
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  rotationSpeed: 100
 --- !u!1 &1108313654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1978,6 +1936,87 @@ RectTransform:
   m_AnchoredPosition: {x: 0.18, y: 5.29}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1309486828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7051767950349292923, guid: f155936f32a27914abc85da987052ddb, type: 3}
+  m_PrefabInstance: {fileID: 3709321721237466905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1309486832
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309486828}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 12.8299465
+  m_Height: 144.4915
+  m_Direction: 1
+  m_Center: {x: -2.9880538, y: 0.032218933, z: -4.8512664}
+--- !u!114 &1309486833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309486828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7bc716f7565fd44949ab5efd68bceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightJoystick:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Joystick
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 5794fd44-326f-4024-8165-dc0cfe7fa89f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8666952849799569744, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  joystickClick:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Joystick Click
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: b305f4b5-d775-4359-8f16-c6859e023c98
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 633cb3e5-33d5-44d7-b7b6-5cbbdd1c7e89
+        m_Path: <XRController>{RightHand}/joystickClicked
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Joystick Click
+        m_Flags: 0
+      - m_Name: 
+        m_Id: 57050bbc-6d27-49a8-899e-2b1a363ac4e9
+        m_Path: <XRInputV1::Oculus::MetaQuestTouchPlusControllerOpenXR>{RightHand}/thumbstickclicked
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Joystick Click
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  rotationSpeed: 100
 --- !u!1 &1366732396
 GameObject:
   m_ObjectHideFlags: 0
@@ -2231,75 +2270,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 100
---- !u!114 &1393126846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1393126843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d7bc716f7565fd44949ab5efd68bceb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightJoystick:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Right Joystick
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 9a94ff6c-7fb7-456b-abd2-a5669827719c
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: 297280e1-de8c-4d90-89a3-5ead56809d29
-        m_Path: <XRController>{RightHand}/joystick
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Right Joystick
-        m_Flags: 0
-      - m_Name: 
-        m_Id: de9b53c9-5489-42b9-89ef-eec841ec21fa
-        m_Path: <XRInputV1::Oculus::MetaQuestTouchPlusControllerOpenXR>{RightHand}/thumbstick
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Right Joystick
-        m_Flags: 0
-      m_Flags: 0
-    m_Reference: {fileID: -8666952849799569744, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  joystickClick:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Joystick Click
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: c01508e6-22e0-499e-a6c8-6b68da111f77
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: 13cf10f3-5352-4e1f-9ed4-46bf00c0d5d1
-        m_Path: <XRController>{RightHand}/joystickClicked
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Joystick Click
-        m_Flags: 0
-      - m_Name: 
-        m_Id: 0a5f62b6-e7b2-4ff3-84d2-1526b736d530
-        m_Path: <XRInputV1::Oculus::MetaQuestTouchPlusControllerOpenXR>{RightHand}/thumbstickclicked
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Joystick Click
-        m_Flags: 0
-      m_Flags: 0
-    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  rotationSpeed: 100
 --- !u!1 &1468048798
 GameObject:
   m_ObjectHideFlags: 0
@@ -2486,6 +2456,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8568544637412148623, guid: 893219773891c784ab469a39151879b4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568544637412148623, guid: 893219773891c784ab469a39151879b4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568544637412148623, guid: 893219773891c784ab469a39151879b4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8568544637412148623, guid: 893219773891c784ab469a39151879b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.4248266
@@ -2839,75 +2821,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 100
---- !u!114 &1927923926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927923923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d7bc716f7565fd44949ab5efd68bceb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightJoystick:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Right Joystick
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 3f8507b3-d226-4804-bea0-f0601c3fe72d
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: cef658dc-ad42-4095-868a-9e0508d90192
-        m_Path: <XRController>{RightHand}/joystick
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Right Joystick
-        m_Flags: 0
-      - m_Name: 
-        m_Id: 9cf53216-73e5-4317-8fc4-e99ed5280d07
-        m_Path: <XRInputV1::Oculus::MetaQuestTouchPlusControllerOpenXR>{RightHand}/thumbstick
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Right Joystick
-        m_Flags: 0
-      m_Flags: 0
-    m_Reference: {fileID: -8666952849799569744, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  joystickClick:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Joystick Click
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 76feabee-1379-41c7-b02e-c174792b836d
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: 80499481-1c29-42b7-9886-ff2b4cb0b098
-        m_Path: <XRController>{RightHand}/joystickClicked
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Joystick Click
-        m_Flags: 0
-      - m_Name: 
-        m_Id: ebf0c6c3-d40c-4b49-a9c6-62e1152fe2f9
-        m_Path: <XRInputV1::Oculus::MetaQuestTouchPlusControllerOpenXR>{RightHand}/thumbstickclicked
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Joystick Click
-        m_Flags: 0
-      m_Flags: 0
-    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  rotationSpeed: 100
 --- !u!1 &1997265616
 GameObject:
   m_ObjectHideFlags: 0
@@ -3071,6 +2984,71 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &2011079980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6749392135904162290, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+  m_PrefabInstance: {fileID: 8108601446677724360}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &2011079982
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011079980}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 25.463259
+  m_Height: 245.49124
+  m_Direction: 1
+  m_Center: {x: -1.1650057, y: -20.261002, z: -6.1955433}
+--- !u!114 &2011079985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011079980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7bc716f7565fd44949ab5efd68bceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightJoystick:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Joystick
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 74191d9a-0714-4760-b1d8-f5f626524315
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8666952849799569744, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  joystickClick:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Joystick Click
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 6b16d53b-6761-47df-b0cd-1692b88141a7
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  rotationSpeed: 100
 --- !u!1 &2071465030
 GameObject:
   m_ObjectHideFlags: 0
@@ -3186,7 +3164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   models:
-  - {fileID: 261712790}
+  - {fileID: 8108601446677724361}
   - {fileID: 444157144}
   - {fileID: 1393126843}
   - {fileID: 1927923923}
@@ -3250,6 +3228,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1633028733494644441, guid: 35d4c9f907d0f534e84e0fd3e8e9df6c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633028733494644441, guid: 35d4c9f907d0f534e84e0fd3e8e9df6c, type: 3}
+      propertyPath: m_TagString
+      value: Grabbable
+      objectReference: {fileID: 0}
     - target: {fileID: 6948972551073131706, guid: 35d4c9f907d0f534e84e0fd3e8e9df6c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.0042750225
@@ -3312,7 +3298,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7720406829302756864, guid: 35d4c9f907d0f534e84e0fd3e8e9df6c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720406829302756864, guid: 35d4c9f907d0f534e84e0fd3e8e9df6c, type: 3}
+      propertyPath: m_TagString
+      value: Grabbable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3321,9 +3311,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7720406829302756864, guid: 35d4c9f907d0f534e84e0fd3e8e9df6c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1393126845}
-    - targetCorrespondingSourceObject: {fileID: 7720406829302756864, guid: 35d4c9f907d0f534e84e0fd3e8e9df6c, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 1633028733494644441, guid: 35d4c9f907d0f534e84e0fd3e8e9df6c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1393126846}
+      addedObject: {fileID: 765921241}
+    - targetCorrespondingSourceObject: {fileID: 1633028733494644441, guid: 35d4c9f907d0f534e84e0fd3e8e9df6c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 765921242}
   m_SourcePrefab: {fileID: 100100000, guid: 35d4c9f907d0f534e84e0fd3e8e9df6c, type: 3}
 --- !u!1001 &3709321721237466905
 PrefabInstance:
@@ -3385,9 +3378,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2040449998775037346, guid: f155936f32a27914abc85da987052ddb, type: 3}
+      propertyPath: m_TagString
+      value: Grabbable
+      objectReference: {fileID: 0}
     - target: {fileID: 7051767950349292923, guid: f155936f32a27914abc85da987052ddb, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051767950349292923, guid: f155936f32a27914abc85da987052ddb, type: 3}
+      propertyPath: m_TagString
+      value: Grabbable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3396,9 +3397,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2040449998775037346, guid: f155936f32a27914abc85da987052ddb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 444157146}
-    - targetCorrespondingSourceObject: {fileID: 2040449998775037346, guid: f155936f32a27914abc85da987052ddb, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 7051767950349292923, guid: f155936f32a27914abc85da987052ddb, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 444157147}
+      addedObject: {fileID: 1309486832}
+    - targetCorrespondingSourceObject: {fileID: 7051767950349292923, guid: f155936f32a27914abc85da987052ddb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1309486833}
   m_SourcePrefab: {fileID: 100100000, guid: f155936f32a27914abc85da987052ddb, type: 3}
 --- !u!1001 &4359160229201751002
 PrefabInstance:
@@ -3419,6 +3423,10 @@ PrefabInstance:
     - target: {fileID: 2810893053008688774, guid: 1535f68d3e19389479df93f5db1c8941, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2810893053008688774, guid: 1535f68d3e19389479df93f5db1c8941, type: 3}
+      propertyPath: m_TagString
+      value: Grabbable
       objectReference: {fileID: 0}
     - target: {fileID: 3191254410076515388, guid: 1535f68d3e19389479df93f5db1c8941, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3464,6 +3472,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6525583603249794655, guid: 1535f68d3e19389479df93f5db1c8941, type: 3}
+      propertyPath: m_TagString
+      value: Grabbable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3471,10 +3483,93 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2810893053008688774, guid: 1535f68d3e19389479df93f5db1c8941, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1927923925}
-    - targetCorrespondingSourceObject: {fileID: 2810893053008688774, guid: 1535f68d3e19389479df93f5db1c8941, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 6525583603249794655, guid: 1535f68d3e19389479df93f5db1c8941, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1927923926}
+      addedObject: {fileID: 998550349}
+    - targetCorrespondingSourceObject: {fileID: 6525583603249794655, guid: 1535f68d3e19389479df93f5db1c8941, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 998550350}
   m_SourcePrefab: {fileID: 100100000, guid: 1535f68d3e19389479df93f5db1c8941, type: 3}
+--- !u!1001 &8108601446677724360
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2316929947857488171, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      propertyPath: m_Name
+      value: healthy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316929947857488171, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316929947857488171, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      propertyPath: m_TagString
+      value: Grabbable
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129072858063623057, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129072858063623057, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.775
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129072858063623057, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.541
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129072858063623057, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129072858063623057, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129072858063623057, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129072858063623057, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129072858063623057, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129072858063623057, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129072858063623057, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749392135904162290, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      propertyPath: m_TagString
+      value: Grabbable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6749392135904162290, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2011079982}
+    - targetCorrespondingSourceObject: {fileID: 6749392135904162290, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2011079985}
+  m_SourcePrefab: {fileID: 100100000, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+--- !u!1 &8108601446677724361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2316929947857488171, guid: ffa90b6e688690144b24e26851fbe7e9, type: 3}
+  m_PrefabInstance: {fileID: 8108601446677724360}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3491,10 +3586,9 @@ SceneRoots:
   - {fileID: 1183904881}
   - {fileID: 1468048804}
   - {fileID: 382863168}
-  - {fileID: 261712794}
   - {fileID: 3709321721237466905}
   - {fileID: 356157926352233749}
   - {fileID: 4359160229201751002}
   - {fileID: 234661650}
-  - {fileID: 662131099}
   - {fileID: 1485706077}
+  - {fileID: 8108601446677724360}

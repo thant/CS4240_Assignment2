@@ -8,11 +8,13 @@ public class ObjectRotator : MonoBehaviour
     public float rotationSpeed = 100f; // Speed of rotation
 
     private Quaternion initialRotation;
+    private Vector3 initialPosition;
 
     void Start()
     {
-        // Store the initial rotation
+        // Store the initial rotation and position
         initialRotation = transform.rotation;
+        initialPosition = transform.position;
     }
 
     void Update()
@@ -28,10 +30,10 @@ public class ObjectRotator : MonoBehaviour
         transform.Rotate(Vector3.up, rotateY, Space.World);
         transform.Rotate(Vector3.right, rotateX, Space.Self); // Optional tilt
 
-        // Reset rotation if the joystick is clicked
+        // Reset rotation and position if the joystick is clicked
         if (joystickClick.action.WasPressedThisFrame())
         {
-            transform.rotation = initialRotation;
+            transform.SetPositionAndRotation(initialPosition, initialRotation);
         }
     }
 }

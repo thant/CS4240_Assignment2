@@ -331,10 +331,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftController: {fileID: 58477356}
   reticle: {fileID: 1370265284}
-  reticleDistance: 5
+  reticleDistance: 1
   interactableLayer:
     serializedVersion: 2
     m_Bits: 64
+  leftJoystickInput:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Joystick Input
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: b6611552-d37e-4f44-8278-b4089f641b1e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -60998027439631388, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   interactButton:
     m_UseReference: 1
     m_Action:
@@ -355,6 +367,8 @@ MonoBehaviour:
         m_Flags: 0
       m_Flags: 0
     m_Reference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  moveSpeed: 2
+  depthSpeed: 2
 --- !u!114 &58477358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,7 +450,7 @@ GameObject:
   - component: {fileID: 596641409}
   - component: {fileID: 596641408}
   - component: {fileID: 596641407}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -801,7 +815,7 @@ GameObject:
   - component: {fileID: 1281201975}
   - component: {fileID: 1281201977}
   - component: {fileID: 1281201976}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: BackingPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1009,6 +1023,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8568544637412148623, guid: 893219773891c784ab469a39151879b4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568544637412148623, guid: 893219773891c784ab469a39151879b4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568544637412148623, guid: 893219773891c784ab469a39151879b4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8568544637412148623, guid: 893219773891c784ab469a39151879b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
