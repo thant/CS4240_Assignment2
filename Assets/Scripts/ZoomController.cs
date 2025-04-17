@@ -3,38 +3,39 @@ using UnityEngine.InputSystem;
 
 public class ZoomController : MonoBehaviour
 {
-    public InputActionProperty zoomButton; // Button to activate zoom
-    public Transform cameraTransform; // Reference point for movement
-    public Transform reticle; // Reticle position
-    public string zoomableTag = "Zoomable"; // Tag for zoomable objects
+    public InputActionProperty joystickInput;           // Vector2 (e.g., left/right thumbstick)
+    public Transform cameraTransform;
+    public string zoomableTag = "Zoomable";
 
-    public float zoomSpeed = 2f; // Speed of movement
-    public float minDistance = 0.5f; // Minimum distance to player
-    public float maxDistance = 5f; // Maximum distance from player
+    public float zoomSpeed = 2f;
+    public float minDistance = 0.5f;
+    public float maxDistance = 5f;
+    public float inputThreshold = 0.1f;  // To avoid jitter from small joystick movement
 
     void Update()
     {
-        if (zoomButton.action.IsPressed()) // Check if zoom button is held
+        float vertical = joystickInput.action.ReadValue<Vector2>().y;
+
+        // Ignore small values to prevent unintentional zooming
+        if (Mathf.Abs(vertical) > inputThreshold)
         {
-            // Check if reticle is colliding with a tagged object
-            Collider[] colliders = Physics.OverlapSphere(reticle.position, 0.1f);
-            foreach (Collider col in colliders)
+            // Find all active objects with the "Zoomable" tag
+            GameObject[] zoomables = GameObject.FindGameObjectsWithTag(zoomableTag);
+
+            foreach (GameObject obj in zoomables)
             {
-                if (col.CompareTag(zoomableTag))
+                Transform target = obj.transform;
+                float distance = Vector3.Distance(target.position, cameraTransform.position);
+
+                // Decide direction based on joystick input
+                int direction = vertical > 0 ? 1 : -1;
+
+                // Only move if within bounds
+                if ((direction == -1 && distance < maxDistance) || (direction == 1 && distance > minDistance))
                 {
-                    Transform targetTransform = col.transform;
-                    
-                    // Move object toward the player
-                    Vector3 moveDirection = (cameraTransform.position - targetTransform.position).normalized;
-                    float step = zoomSpeed * Time.deltaTime;
-                    targetTransform.position = Vector3.MoveTowards(targetTransform.position, cameraTransform.position, step);
-                    
-                    // Stop movement if within min distance
-                    if (Vector3.Distance(targetTransform.position, cameraTransform.position) < minDistance)
-                    {
-                        targetTransform.position = cameraTransform.position;
-                    }
-                    break;
+                    Vector3 moveDir = (cameraTransform.position - target.position).normalized;
+                    float step = zoomSpeed * Time.deltaTime * direction;
+                    target.position = Vector3.MoveTowards(target.position, cameraTransform.position, -step);
                 }
             }
         }
